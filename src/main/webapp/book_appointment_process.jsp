@@ -11,7 +11,6 @@ try
            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/hydrae", "root", "");
            Statement st=conn.createStatement();
            int i=st.executeUpdate("insert into booking(booking_details,booking_time)values('"+booking_details+"','"+booking_time+"')");
-        out.println("Booking schedule set successfully. Please wait for the technician's call regarding your booking request.");
         }
         catch(Exception e)
         {
@@ -19,3 +18,13 @@ try
         e.printStackTrace();
         }
  %>
+ <html>
+ <body>
+ Booking schedule set successfully. Please wait for the technician's call regarding your booking request
+ 
+ 
+ testing par, pag gumana edi goods
+ 
+ <a href="booking_list.jsp"> balik ka na</a>
+ </body>
+ </html>

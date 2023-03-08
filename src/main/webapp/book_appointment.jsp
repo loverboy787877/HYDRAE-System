@@ -18,5 +18,6 @@ Booking Time: <br>
 <br><br>
 <input type="submit" value="Submit">
 </form>
+<a href= "booking_list.jsp">Go back</a>
 </body>
 </html>

@@ -50,7 +50,7 @@ while(resultSet.next()){
 <td><%=resultSet.getString("booking_time") %></td>
 
 <td><a href="edit_appointment.jsp?booking_id=<%=resultSet.getString("booking_id")%>">Update</a></td>
-<td><a href="delete_booking.jsp?id=<%=resultSet.getString("id") %>">Delete</a></td>
+<td><a href="delete_booking.jsp?booking_id=<%=resultSet.getString("booking_id") %>">Delete</a></td>
 </tr>
 <%
 }
@@ -60,5 +60,8 @@ e.printStackTrace();
 }
 %>
 </table>
+Want to book an appointment? Click <a href="book_appointment.jsp">here</a>
+
+
 </body>
 </html>

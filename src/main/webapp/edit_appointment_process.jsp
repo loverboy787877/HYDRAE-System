@@ -41,3 +41,9 @@ out.println(ps);
 }
 }
 %>
+
+<html>
+<body>
+Go back to <a href= "booking_list.jsp">appointment list</a>
+</body>
+</html>
