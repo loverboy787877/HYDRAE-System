@@ -1,23 +1,66 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-<body>
-<form method="post" action="book_appointment_process.jsp">
-<p> BOOK APPOINTMENT: </p>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Reservation Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="booking.css">
+		
+		
+    </head>
+    <body>
+	<form method="post" action="book_appointment_process.jsp">
+		<section class = "banner1">
+		<div class="main">
+				<div class="logo">
+					<img src="logo.png">
+				</div>	
+				<ul>
+					<li><a href="signout.html"> Sign out </a> </li>
+				</ul>
+				<ul>
+					<li><a href="home.html"> Home </a> </li>
+				</ul>
+				<div class= "logout"> 	
+		        </div>
+			    
+        <section class = "banner">
+		
+            <h2>BOOK YOUR APPOINTMENT NOW </h2>
+            <div class = "card-container">
+                <div class = "card-img">
+                    <!-- image here -->
+                </div>
 
-Booking Details:<br>
-<input type="text" name="booking_details">
-<br>
-Booking Time: <br>
-<input type="time" id="appt" name="booking_time"
-       min="09:00" max="18:00" required>
+                <div class = "card-content">
+                    <h3>Reservation</h3>
+                    <form>
+                        <div class = "form-row">
+                            <input type="date" id="date">
+							</div>
+						<div class = "form-row">
+                    
+									<input type="text" name="booking_details" placeholder="Booking Details:">
+									<input type="time" id="appt" name="booking_time" placeholder="Time:
+											min="09:00" max="18:00" required >
+                        </div>
 
-<small>Office hours are 12am to 6pm</small>
-<br>
-<br><br>
-<input type="submit" value="Submit">
-</form>
-<a href= "booking_list.jsp">Go back</a>
-</body>
+                        <div class = "form-row">
+                            
+                            <input type = "text" placeholder="Phone Number">
+                        </div>
+
+                        <div class = "form-row">
+                            
+                            <input type = "submit" value = "BOOK APPOINTMENT">
+                        </div>
+						
+			</div>	
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </body>
 </html>
