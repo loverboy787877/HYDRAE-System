@@ -24,7 +24,7 @@
 				</ul>
 				<div class= "logout"> 	
 		        </div>
-			    
+		    
         <section class = "banner">
 		
             <h2>BOOK YOUR APPOINTMENT NOW </h2>
