@@ -23,7 +23,12 @@ Connection connection = null;
 Statement statement = null;
 ResultSet resultSet = null;
 %>
-<html>
+<html lang="en-US">
+<head>
+	<title>
+		Appointment List	
+	</title>
+</head>
 <body>
 
 <h1>BOOKING APPOINTMENTS:</h1>
