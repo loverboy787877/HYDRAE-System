@@ -17,7 +17,7 @@
 					<img src="images/logo.png">
 				</div>	
 				<ul>
-					<li><a href="signout.html"> Sign out </a> </li>
+					<li><a href="login.jsp"> Sign out </a> </li>
 				</ul>
 				<ul>
 					<li><a href="home.html"> Home </a> </li>
