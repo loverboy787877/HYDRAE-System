@@ -23,51 +23,18 @@ Connection connection = null;
 Statement statement = null;
 ResultSet resultSet = null;
 %>
-<html lang="en-US">
-<head>
-	<title>
-		Appointment List	
-	</title>
-	<style>
-		body {
-			background-image: url("images/homebg.png");
-			background-repeat: no-repeat;
-			background-size: cover;
-			background-attachment: fixed;
-		}
-		table, th, td {
-			border: 1px solid;
-			margin-left:auto;
-			margin-right:auto;
-			font-size: 20px;
-		}
-		th,td {
-			padding: 15px;
-			text-align: left;
-		}
-		h3 {
-			text-align: center;
-		}
-		caption {
-			font-size: 30px;
-		}
-		tr:hover {
-			background-color: gray;
-		}
-	</style>
-</head>
+<html>
 <body>
-	<div style="padding: 100px;">
-		                                 
-	</div>
-<table style="border:1px solid black;margin-left:auto;margin-right:auto;">
-	<caption>
-		List of Appointments
-	</caption>
+
+<h1>BOOKING APPOINTMENTS:</h1>
+
+<table border="1">
 <tr>
 <td>booking_id</td>
 <td>booking_details</td>
 <td>booking_time</td>
+<td>booking_date</td>
+<td>phone_number</td>
 </tr>
 
 <%
@@ -83,6 +50,8 @@ while(resultSet.next()){
 <td><%=resultSet.getString("booking_id") %></td>
 <td><%=resultSet.getString("booking_details") %></td>
 <td><%=resultSet.getString("booking_time") %></td>
+<td><%=resultSet.getString("booking_date") %></td>
+<td><%=resultSet.getString("phone_number") %></td>
 
 <td><a href="edit_appointment.jsp?booking_id=<%=resultSet.getString("booking_id")%>">Update</a></td>
 <td><a href="delete_booking.jsp?booking_id=<%=resultSet.getString("booking_id") %>">Delete</a></td>
@@ -95,9 +64,7 @@ e.printStackTrace();
 }
 %>
 </table>
-<h3>
-	Want to book an appointment? Click <a href="book_appointment.jsp">here</a>
-</h3>
+Want to book an appointment? Click <a href="book_appointment.jsp">here</a>
 
 
 </body>
