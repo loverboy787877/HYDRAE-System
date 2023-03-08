@@ -23,12 +23,47 @@ Connection connection = null;
 Statement statement = null;
 ResultSet resultSet = null;
 %>
-<html>
+<html lang="en-US">
+<head>
+	<title>
+		Appointment List	
+	</title>
+	<style>
+		body {
+			background-image: url("images/homebg.png");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		table, th, td {
+			border: 1px solid;
+			margin-left:auto;
+			margin-right:auto;
+			font-size: 20px;
+		}
+		th,td {
+			padding: 15px;
+			text-align: left;
+		}
+		h3 {
+			text-align: center;
+		}
+		caption {
+			font-size: 30px;
+		}
+		tr:hover {
+			background-color: gray;
+		}
+	</style>
+</head>
 <body>
-
-<h1>BOOKING APPOINTMENTS:</h1>
-
-<table border="1">
+	<div style="padding: 100px;">
+		                                 
+	</div>
+<table style="border:1px solid black;margin-left:auto;margin-right:auto;">
+	<caption>
+		List of Appointments
+	</caption>
 <tr>
 <td>booking_id</td>
 <td>booking_details</td>
@@ -64,7 +99,9 @@ e.printStackTrace();
 }
 %>
 </table>
-Want to book an appointment? Click <a href="book_appointment.jsp">here</a>
+<h3>
+	Want to book an appointment? Click <a href="book_appointment.jsp">here</a>
+</h3>
 
 
 </body>
