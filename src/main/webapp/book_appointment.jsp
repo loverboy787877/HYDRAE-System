@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Reservation Form</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="booking.css">
+        <link rel="stylesheet" href="css/booking.css">
 		
 		
     </head>
@@ -14,7 +14,7 @@
 		<section class = "banner1">
 		<div class="main">
 				<div class="logo">
-					<img src="logo.png">
+					<img src="images/logo.png">
 				</div>	
 				<ul>
 					<li><a href="signout.html"> Sign out </a> </li>
@@ -24,7 +24,7 @@
 				</ul>
 				<div class= "logout"> 	
 		        </div>
-			    
+		    
         <section class = "banner">
 		
             <h2>BOOK YOUR APPOINTMENT NOW </h2>
