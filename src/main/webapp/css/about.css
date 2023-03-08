@@ -1,0 +1,26 @@
+
+
+body{
+	background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("../images/homebg.png");
+}
+h1{
+	 background-color: #dde7c7;
+}
+.container {
+ display: grid;
+ align-items: center; 
+ grid-template-columns: 1fr 1fr 1fr;
+ column-gap: 5px;
+ margin-top: 10%;
+ margin-left: 30%;
+
+}
+
+img {
+  max-width: 100%;
+  max-height:100%;
+}
+
+.text {
+  font-size: 8px;
+}

@@ -39,8 +39,8 @@ public class LoginServlet extends HttpServlet {
 			else
 			{
 				
-				out.println("<font color=red size=18> Login Failed!!<br>");
-				out.println("<a href=login.jsp> Try AGAIN!!</a>");
+				RequestDispatcher rd=request.getRequestDispatcher("loginfail.html");
+				rd.forward(request, response);
 			}
 			
 			
