@@ -38,7 +38,7 @@ Booking Details:<br>
 <br>
 Booking Time:<br>
 <input type="time" id="appt" name="booking_time"
-       min="09:00" max="18:00" required
+       min="00:00" max="24:00" required
        value="<%=resultSet.getString("booking_time") %>">
 <br>
 

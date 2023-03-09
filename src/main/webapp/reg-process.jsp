@@ -14,7 +14,6 @@ Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/hydra
 Statement st=conn.createStatement();
 
 int i=st.executeUpdate("insert into users(fname,lname,email,userid,password)values('"+fname+"','"+lname+"','"+email+"','"+userid+"','"+password+"')");
-out.println("Thank you for register ! Please <a href='login.html'>Login</a> to continue.");
 }
 catch(Exception e)
 {
@@ -22,3 +21,20 @@ System.out.print(e);
 e.printStackTrace();
 }
 %>
+<html>
+<head>
+<link href="css/fail.css" rel="stylesheet">
+</head>
+
+<div class="form-container">
+ 
+  <div class="message-container">
+  <div class="message">Your registration is successful</div>
+  </div>
+  
+
+  
+  <p><a href=login.jsp>"Login Now"</a></p>
+ 
+</div>
+</html>
