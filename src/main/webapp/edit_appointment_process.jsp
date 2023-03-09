@@ -66,7 +66,7 @@ out.println(ps);
 			    
 			</div>	
 			<div class="title">
-			<h1> Your Schedule has been updated succesfully.</h1>
+			<h1> Your Schedule has been updated successfully.</h1>
 			</div>
 			<div class="button">
 				<a href="booking_list.jsp" class="btn"> Back </a>
