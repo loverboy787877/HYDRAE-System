@@ -6,7 +6,6 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -16,12 +15,14 @@ import java.sql.SQLException;
 /**
  * Servlet implementation class LoginServlet
  */
+
+
 public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		try {
-			PrintWriter out=response.getWriter();
+
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/hydrae", "root", "");
 			String n=request.getParameter("userid");
@@ -41,12 +42,7 @@ public class LoginServlet extends HttpServlet {
 				
 				RequestDispatcher rd=request.getRequestDispatcher("loginfail.html");
 				rd.forward(request, response);
-			}
-			
-			
-			
-			
-			
+			}			
 			
 		} catch (ClassNotFoundException e) {
 

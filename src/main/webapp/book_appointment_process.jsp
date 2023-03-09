@@ -21,12 +21,33 @@ try
         }
  %>
  <html>
- <body>
- Booking schedule set successfully. Please wait for the technician's call regarding your booking request
+ <head>
+ <link rel="stylesheet" type="text/css" href="css/style1.css">
+ </head>
+ <body> 
+ <header>
+		
+			<div class="main">
+				<div class="logo">
+					<img src="images/logo.png">
+				</div>	
+				<ul>
+					<li><a href="login.jsp"> Sign out </a> </li>
+				</ul>
+				<div class= "logout"> 	
+				<ul> 
+					<li><a href="booking_list.jsp">Appointments</a> </li>
+			    </ul>
+		        </div>
+			    
+			</div>	
+			<div class="title">
+			<h1> Your Schedule is set successfully. </h1>
+			</div>
+			<div class="button">
+				<a href="booking_list.jsp" class="btn"> Back </a>
+			</div>	
+		</header>
  
- 
- testing par, pag gumana edi goods
- 
- <a href="booking_list.jsp"> balik ka na</a>
  </body>
  </html>
