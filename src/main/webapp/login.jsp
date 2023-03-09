@@ -18,11 +18,11 @@
                 <h2 class="title">Sign In</h2>
                 <div class="input-field">
                     <i class='bx bxs-user'></i>
-                    <input type="text" placeholder="Username" name="userid">
+                    <input type="text" placeholder="Username" name="userid" required>
                 </div>
                 <div class="input-field">
                     <i class='bx bxs-lock-alt'></i>
-                    <input type="password" placeholder="Password" name="password">
+                    <input type="password" placeholder="Password" name="password" required>
                 </div>
                 <input type="submit" value="Login" class="btn solid">
                 <p class="social-text">Or sign in with social platforms</p>
@@ -46,19 +46,19 @@
                 <h2 class="title">Sign Up</h2>
                                 <div class="input-field">
                     <i class='bx bxs-user'></i>
-                    <input type="text" name="fname" placeholder="First Name">
+                    <input type="text" name="fname" placeholder="First Name" required>
                 </div>
                 <div class="input-field">
                     <i class='bx bxs-user'></i>
-                    <input type="text" name="lname" placeholder="Last Name">
+                    <input type="text" name="lname" placeholder="Last Name" required>
                 </div>
                 <div class="input-field">
                     <i class='bx bxs-user'></i>
-                    <input type="text" name="email" placeholder="Email">
+                    <input type="text" name="email" placeholder="Email" required>
                 </div>
                 <div class="input-field">
                     <i class='bx bxs-user'></i>
-                    <input type="text" name="userid" placeholder="Username">
+                    <input type="text" name="userid" placeholder="Username" required>
                 </div>
                 <div class="input-field">
                     <i class='bx bxs-lock-alt'></i>
