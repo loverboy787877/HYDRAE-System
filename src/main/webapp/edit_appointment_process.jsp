@@ -26,11 +26,11 @@ ps.setString(3, booking_time);
 int i = ps.executeUpdate();
 if(i > 0)
 {
-out.print("Record Updated Successfully");
+
 }
 else
 {
-out.print("There is a problem in updating Record.");
+
 } 
 }
 catch(SQLException ps)
@@ -43,7 +43,29 @@ out.println(ps);
 %>
 
 <html>
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
 <body>
-Go back to <a href= "booking_list.jsp">appointment list</a>
+<header>
+<div class="main">
+				<div class="logo">
+					<img src="images/logo.png">
+				</div>	
+				<ul>
+					<li><a href="login.jsp"> Sign out </a> </li>
+				</ul>
+				<div class= "logout"> 	
+				<ul> 
+					<li><a href="booking_list.jsp">Appointments</a> </li>
+			    </ul>
+		        </div>
+			    
+			</div>	
+			<div class="title">
+			<h1> Your Schedule has been updated succesfully.</h1>
+			</div>
+			<div class="button">
+				<a href="booking_list.jsp" class="btn"> Back </a>
+			</div>	
+		</header>
 </body>
 </html>
