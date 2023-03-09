@@ -44,6 +44,11 @@ out.println(ps);
 
 <html>
 	<link rel="stylesheet" type="text/css" href="css/style1.css">
+	<style>
+	h1 {
+	  	text-align: center;
+	}
+	</style>
 <body>
 <header>
 <div class="main">
