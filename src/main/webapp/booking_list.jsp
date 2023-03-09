@@ -35,10 +35,17 @@ ResultSet resultSet = null;
 			background-size: cover;
 			background-attachment: fixed;
 		}
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: Times new roman;
+		}
+		.center {
+		  margin-right: auto;
+		  margin-left: auto;
+		}
 		table, th, td {
 			border: 1px solid;
-			margin-left:auto;
-			margin-right:auto;
 			font-size: 20px;
 		}
 		th,td {
@@ -54,13 +61,73 @@ ResultSet resultSet = null;
 		tr:hover {
 			background-color: gray;
 		}
+
+		.logout{
+			margin-left: 20px;	
+		}
+		
+		ul{
+			float:right;
+			list-style-type: none;
+			margin-top: 35px;
+			margin-right: 20px;
+			
+		}
+		ul li{
+			display: inline-block;
+			
+		}	
+		ul li a{
+			border: 1px solid #dde7c7; 
+			border-radius: 20px;
+			border-spacing: 15px 50px;
+			padding: 10px 30px;
+			color: #fff;
+			text-decoration: none;
+			transition: 0.6s ease;
+		}	
+		ul li a:hover{
+			background-color:#3a5a40;  
+			color:#fff;	
+			
+		}
+		.logo img{
+			float: left;
+			width: 350px;
+			height: auto;
+			
+		}	
+		.main{
+			max-width: 1200px;
+			margin: auto;
+		
+		}
 	</style>
 </head>
+		<header>
+			<div class="main">
+				<div class="logo">
+					<img src="images/logo.png">
+				</div>	
+				<ul>
+					<li><a href="login.jsp"> Sign out </a> </li>
+				</ul>
+				<div class= "logout"> 	
+				<ul> 
+					<li><a href="home.html">Home</a> </li>
+			    </ul>
+		        </div>
+			    
+			</div>
+		</header>
 <body>
 	<div style="padding: 100px;">
 		                                 
 	</div>
-<table style="border:1px solid black;margin-left:auto;margin-right:auto;">
+	
+	
+<div class="center">
+<table>
 	<caption>
 		List of Appointments
 	</caption>
@@ -99,6 +166,7 @@ e.printStackTrace();
 }
 %>
 </table>
+</div>
 <h3>
 	Want to book an appointment? Click <a href="book_appointment.jsp">here</a>
 </h3>
