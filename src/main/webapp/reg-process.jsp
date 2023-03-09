@@ -21,20 +21,28 @@ System.out.print(e);
 e.printStackTrace();
 }
 %>
-<html>
-<head>
-<link href="css/fail.css" rel="stylesheet">
-</head>
+ <html>
+ <head>
+ <link rel="stylesheet" type="text/css" href="css/style1.css">
+ <title>
+     Booking Successful
+ </title>
+ </head>
+ <body> 
+ <header>
 
-<div class="form-container">
+            <div class="main">
+                <div class="logo">
+                    <img src="images/logo.png">
+                </div>
+            </div>
+            <div class="title">
+            <h1> Registration Successful. </h1>
+            </div>
+            <div class="button">
+                <a href="login.jsp" class="btn"> Sign in </a>
+            </div>
+        </header>
  
-  <div class="message-container">
-  <div class="message">Your registration is successful</div>
-  </div>
-  
-
-  
-  <p><a href=login.jsp>"Login Now"</a></p>
- 
-</div>
-</html>
+ </body>
+ </html>
