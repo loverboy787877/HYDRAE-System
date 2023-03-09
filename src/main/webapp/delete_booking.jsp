@@ -18,6 +18,11 @@ e.printStackTrace();
 %>
 <html>
 	<link rel="stylesheet" type="text/css" href="css/style1.css">
+	<style>
+	h1 {
+	  	text-align: center;
+	}
+	</style>
 <body>
 <header>
 <div class="main">
@@ -35,7 +40,7 @@ e.printStackTrace();
 			    
 			</div>	
 			<div class="title">
-			<h1> Your Schedule has been deleted succesfully.</h1>
+			<h1> Your Schedule has been deleted successfully.</h1>
 			</div>
 			<div class="button">
 				<a href="booking_list.jsp" class="btn"> Back </a>
