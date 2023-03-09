@@ -34,7 +34,7 @@
                 </div>
 
                 <div class = "card-content">
-                    <h3>Reservation</h3>
+                    <h3>Appointment Details</h3>
                     <form>
                         <div class = "form-row">
                             <input type="date" id="date" name="booking_date">

@@ -1,7 +1,12 @@
-
+*{
+	color: black;
+	text-align: center;
+}
 
 body{
 	background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("../images/homebg.png");
+	background-repeat: no-repeat;
+  	background-size: cover;
 }
 h1{
 	 background-color: #dde7c7;
